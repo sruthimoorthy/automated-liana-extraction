@@ -27,6 +27,9 @@ def main():
     knn_arr = np.loadtxt(in_file_name)
 
     feature_arr = generate_features.get_eigen_values_with_radius(nbr_arr, knn_arr, no_rand_pts)
+    '''
+    model_file_name='liana_clf_model.sav'. Please download this model file from the following link: https://www.dropbox.com/s/9r77dp9dtu5n77v/liana_clf_model.sav?dl=0
+    '''
     liana_classifier.predict_class(feature_arr, out_file_name, model_file_name='liana_clf_model.sav')
 
 if __name__== "__main__":
