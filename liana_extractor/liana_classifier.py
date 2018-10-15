@@ -14,7 +14,7 @@ def predict_class(arr_with_features, out_file_name, model_file_name = 'liana_clf
             out_file_name: str
                 Output file to save predictions
             model_file_name: str
-                Filename of the classifier to make the predictions
+                Filename of the classifier to make the predictions. Please download this model file from the following link: https://www.dropbox.com/s/9r77dp9dtu5n77v/liana_clf_model.sav?dl=0
         """
 
     clf = pickle.load(open(os.path.abspath(model_file_name), 'rb'))
