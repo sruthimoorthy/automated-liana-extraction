@@ -2,7 +2,7 @@ to extract liana from plot-level point cloud:
 ---------------------------------------------
 python classify_lianas.py -nbr 'NBR_FILE_NAME' -in 'INPUT_FILE_NAME' -randpts 0 -out 'OUTPUT_FILE_NAME'
 
-to extract liana from plot-level point cloud:
+to separate leaf from wood from plot-level point cloud:
 ---------------------------------------------
 python cluster_leaf_vs_wood.py -nbr 'NBR_FILE_NAME' -in 'INPUT_FILE_NAME' -ifclass 1 -out 'OUTPUT_FILE_NAME'
 
