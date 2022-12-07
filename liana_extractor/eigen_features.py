@@ -3,7 +3,14 @@ import numpy as np
 array_to_find_nbrs = []
 
 def get_elements(idx):
-    return array_to_find_nbrs[idx,:]
+    if np.shape(array_to_find_nbrs[idx,:])[0] > 100:
+        rand_int = np.random.choice(np.shape(array_to_find_nbrs[idx,:])[0], 100, replace=False)
+        return array_to_find_nbrs[idx,:][rand_int,:]
+    else:
+        return array_to_find_nbrs[idx,:]
+    
+#def get_elements(idx):
+#    return array_to_find_nbrs[idx,:]
 
 def get_covariance(arr):
     return np.cov(np.asarray(arr).T)
